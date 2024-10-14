@@ -47,6 +47,13 @@ def display_answer(answer):
             continue
             
         guessed_letters.add(guess)
+        if guess in answer:
+             for i in range(len(answer)):
+              if answer[i] == guess:
+                  hint[i] = guess
+        else:
+            wrong_guesses += 1
+            
         if "_" not in hint:
             display_man(wrong_guesses)
             display_answer(answer)
