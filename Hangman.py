@@ -35,6 +35,8 @@ def display_man(wrong_guesses):
      print(line)
 def display_hint(hint):
     print(" ".join(hint))
+def display_answer(answer):
+    print(" ".join(answer))
             
         if "_" not in hint:
             display_man(wrong_guesses)
