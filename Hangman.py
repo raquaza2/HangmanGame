@@ -39,6 +39,9 @@ def display_answer(answer):
     print(" ".join(answer))
     answer = random.choice(words)
     hint = ["_"] * len(answer)
+        if len(guess) !=1 or not guess.isalpha:
+            print("Please enter a single letter.")
+            continue
             
         if "_" not in hint:
             display_man(wrong_guesses)
