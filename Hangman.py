@@ -37,6 +37,7 @@ def display_hint(hint):
     print(" ".join(hint))
 def display_answer(answer):
     print(" ".join(answer))
+    answer = random.choice(words)
             
         if "_" not in hint:
             display_man(wrong_guesses)
