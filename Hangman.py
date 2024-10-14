@@ -1,3 +1,8 @@
+import random
+
+words = ("coconut", "pineapple","apple", "orange" ,"banana")
+
+#dictionary of key:()
 hangman_art = {0:("   ",
                   "   ",
                   "   "),
@@ -25,6 +30,9 @@ hangman_art = {0:("   ",
                  " /|\ ",
                   " / \ ")}
 
+def display_man(wrong_guesses):
+    for line in hangman_art[wrong_guesses]:
+     print(line)
             
         if "_" not in hint:
             display_man(wrong_guesses)
