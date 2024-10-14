@@ -46,6 +46,7 @@ def display_answer(answer):
             print(f"{guess} is already guessed")
             continue
             
+        guessed_letters.add(guess)
         if "_" not in hint:
             display_man(wrong_guesses)
             display_answer(answer)
