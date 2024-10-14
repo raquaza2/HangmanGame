@@ -42,6 +42,9 @@ def display_answer(answer):
         if len(guess) !=1 or not guess.isalpha:
             print("Please enter a single letter.")
             continue
+        if guess in guessed_letters:
+            print(f"{guess} is already guessed")
+            continue
             
         if "_" not in hint:
             display_man(wrong_guesses)
